@@ -9,7 +9,7 @@ import {
   createItem,
   createItemForUser,
   deleteItem,
-} from './partials/js/firebase-auth';
+} from '/partials/js/firebase-auth';
 
 const loginButton = document.getElementById('login');
 const registerButton = document.getElementById('register');

@@ -97,7 +97,7 @@ onAuthStateChanged(auth, user => {
 });
 
 async function readData() {
-  const dataRef = ref(db, 'shoppingList');
+  const dataRef = ref(db, `shoppingList/${userID}`);
   try {
     const snapshot = await get(dataRef);
     if (snapshot.exists()) {
